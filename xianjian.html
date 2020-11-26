@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <title>Document</title>
+    <style>
+            .col-md-10{
+                /*background: red;*/
+                height: 380px;
+            }
+            .col-md-12{
+                background: gray;
+                
+            }
+            p{
+                font-size: 16px;
+                color: gray;
+                padding: 5px 0 5px 0;
+            }
+            #fix-nav{
+            width: 100%;
+            height: 40px;
+            background: white;
+            position: fixed;
+						top: 0;
+            display: none;       
+            z-index: 2000;
+						border-bottom: 1px solid;
+        }
+		#to-top{
+			color: skyblue;
+			font-size: 25px;
+			margin-left: 300px;
+		}
+		#to-top:hover{
+			cursor: pointer;
+		}
+        </style>
+</head>
+<body>
+        <div id="fix-nav">
+                <div id="to-top" >
+                                音乐FM
+                </div>
+            </div>
+        <div class="row top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <img src="images/156.png" alt="">
+                            <ul class="nav nav-pills col-md-offset-2">
+                            <li role="presentation" ><a href="主页.html">期刊</a></li>
+                            <li role="presentation"><a href="主页.html">排行榜</a></li>
+                            <li role="presentation"><a href="主页.html">music</a></li>
+                            <li role="presentation"><a href="主页.html">关于我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"></div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-md-offset-2" style="margin-top:10px;">                                 
+                                <video src="images/xianjian.mp4" controls="cpreload" width="700px" height="450px;"></video>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-md-offset-1" style="margin-top:30px;">
+                                <p>十年前，山顶上的六个人对着星空大声的喊出的自己的理想</p>
+                                <p>从此他们开始为了自己的理想迸发，也从那年开始，他们各奔东西、历经磨难。</p>
+                                
+                                <p>在人生的每个阶段都有陪伴自己的人，但总免不了各奔东西。</p>
+                                <p>儿时的玩伴或因搬家而走散，读书时要好的朋友也因考上不同的学校而开始疏远，情人总是分分合合，即便是伴侣也有一人会先离去。</p>
+                                <p>陪你走过这一世的分分秒秒，只有你自己。</p>
+                                <p> 所以我经常会告诫自己：要认清自己，不要害怕犯错，人都是从各种错误中发现自己真正想要的。 
+                                    要活好当下，在不伤害爱你的人的前提下，排除万难的活在自己想要的世界里，千万别逐众线路，也千万不要被无常的未来所困扰。</p>    
+                                <p>以前翻译的 Being Erica 里 Dr. Tom 曾 Quote 过这句话，便是现今引导着我的准则了。</p>
+                                <p>Do not dwell in the past, do not dream of the future, concentrate yourself in the present。</p>
+                                <p>「不牵绊过往，不寄梦未来，活好当下」</p>
+                                <p>对于爱情，人们往往希望自己能像灵儿一般，倍受逍遥哥哥的宠爱，然而现实在找到那位陪你走过余生的他之前，往往是大家都不得不扮演着林月如的角色。</p>
+                                <p>虽然月如最终没有和李逍遥在一起，但是她却收获了灵儿永远也得不到的情感，介乎朋友与爱之间的「喜欢」。她成功的在逍遥心中占据了一块位置，一块让你觉得少了会不习惯的位置，我想大概这样也足够了。</p>
+                                <p>因为你总要试着习惯你眼中看到的和现实看到的是不同的两样东西。时间有长有短，有的感情持续半个世纪，有的感情在几年后戛然而止，然后却能让人回味一生。</p>
+                                <p>不管是好是坏，是苦是甜，难捱还是快乐，都要学会接受，因为接受是变好的开始。</p>
+                                <p>于自己而言，不管你现在是如日中天，还是桑榆暮景，都要明白世事的无常，从而感谢上天给你的每一个际遇，让你的这一刻独一无二，无法复制。</p>
+                                    <img src="images/xianjian.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height:60px;"></div>
+                <div class="row">
+                        <a name="three"> 
+                    <div class="col-md-12" style="background:#363636;height:250px;padding-top:100px;">
+                        
+                    </div>
+                </div>
+                <script>
+                        // 监听浏览器的滚动条事件
+                        var setScroll
+                    var scrollheight = 0
+                    var fixnav = document.querySelector('#fix-nav')
+                    window.onscroll = function(e){
+                        scrollheight = e.pageY
+                        if(e.pageY > 300){
+                            fixnav.style.display = 'block'
+                        }
+                        else{
+                            fixnav.style.display = 'none'
+                        }
+                    }
+                    // 点击箭头回去
+                    var backto = document.querySelector('#to-top')
+                    backto.onclick = function(){
+                        // 每十秒运行一次这个函数
+                        setScroll = setInterval(transitionscroll,10)
+                    }
+                    // 这个函数是让它向上滚动 让pageY - 10
+                    function transitionscroll(){
+                        scrollheight = scrollheight - 10
+                        window.scrollTo('y',scrollheight)
+                        if(scrollheight < 1){
+                            clearInterval(setScroll)
+                        }
+                    }
+                    </script>
+</body>
+</html>
